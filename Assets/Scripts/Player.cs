@@ -31,6 +31,12 @@ public class Player : MonoBehaviour
     private float groundCheckCooldown = 1.0f; //cooldown time after landing
     private float lastGroundedTime; //variable to track last time player was grounded
 
+    //variables for when falling animation gets stuck
+    public float stuckTimeThreshold = 5f;
+    private float stuckTimer = 0f;
+    public string fallingTag = "Falling";
+    public float respawnTime = 2f; //seconds to wait before respawn
+
     void Start()
     {
         rb = GetComponent<Rigidbody>(); //get rigidbody
@@ -47,6 +53,7 @@ public class Player : MonoBehaviour
         HandleJump(); //player jump method
         HandleLanding(); //player landing method
         HandleDive(); //player diving method
+        HandleStuckFalling(); //method to check if player is stuck in the falling animation, respawns player if so
     }
 
     void FixedUpdate()
@@ -177,6 +184,24 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void HandleStuckFalling()
+    {
+        AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0); //get current animation state
+        if (currentState.IsName(fallingTag)) //if current animation state is the same as last animation state
+        {
+            stuckTimer += Time.deltaTime; //start stuck timer
+            if (stuckTimer >= stuckTimeThreshold) //if stuck timer reaches threshold
+            {
+                StartCoroutine(RespawnAfterDelay(respawnTime)); //character is considered stuck, start coroutine
+                stuckTimer = 0; //reset timer
+            }
+        }
+        else //if animation has changed, reset timer
+        {
+            stuckTimer = 0;
+        }
+    }
+
     private void Respawn()
     {
         transform.position = respawnPoint; //reset the position of the player to the respawn point
@@ -205,11 +230,11 @@ public class Player : MonoBehaviour
         {
             transform.Rotate(0, mouseX * mouseSensitivity, 0); //rotate around y axis based on mouse movement
         }
-        else if (movement != Vector3.zero) //if movement is not 0 also rotate to face that direction
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(movement);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
-        }
+        //if (movement != Vector3.zero) //logic to rotate based on movement direction possibly add to options later 
+        //{
+        //    Quaternion targetRotation = Quaternion.LookRotation(movement);
+        //    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+        //}
     }
 
     private void OnCollisionEnter(Collision collision) //below will check player collision with the ground platforms
@@ -233,6 +258,12 @@ public class Player : MonoBehaviour
             IsGrounded = false;
             animator.SetBool("IsGrounded", false);
         }
+    }
+
+    private IEnumerator RespawnAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Respawn();
     }
 }
 

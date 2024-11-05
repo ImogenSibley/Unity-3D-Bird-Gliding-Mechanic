@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private Animator animator; 
-    [SerializeField] private float moveSpeed = 10f; //player walking speed
-    [SerializeField] private float sprintModifier = 20f; //value added to walking speed to make character sprint
-    [SerializeField] private float jumpForce = 30f; //force applied during a jump
+    public Animator animator; 
+    public float moveSpeed = 10f; //player walking speed
+    public float sprintModifier = 20f; //value added to walking speed to make character sprint
+    public float jumpForce = 30f; //force applied during a jump
+    public float diveForce = 50f; //force applied during a dive
+
     [SerializeField] private float rotationSpeed = 3f; //speed camera rotates around y axis
-    [SerializeField] private float diveForce = 50f; //force applied during a dive
+    [SerializeField] private float doubleTapTimeWindow = 5.0f; //time allowed between double press of button (Space) currently 5 seconds
+    [SerializeField] private float gravityMultiplier = 1.5f; //gravity applied when falling
+    [SerializeField] private float fallThreshold = -50f; //distance along y axis that indicates falling into the abyss
+    [SerializeField] private float fallAngleThreshold = 45f; //angle in degrees for resetting the character
     [SerializeField] private float slideSpeed = 2f; //player slide speed for hitting walls
     [SerializeField] private float wallRayLength = 0.5f; //length of raycast variable to check for walls
-
-    private float doubleTapTimeWindow = 5.0f; //time allowed between double press of button (Space) currently 5 seconds
-    private float gravityMultiplier = 1.5f; //gravity applied when falling
-    private float fallThreshold = -50f; //distance along y axis that indicates falling into the abyss
-    private float fallAngleThreshold = 45f; //angle in degrees for resetting the character
-    [SerializeField] private Vector3 respawnPoint = new Vector3(0f, 2f, 0f); //reference to respawn point
     [SerializeField] private float mouseSensitivity = 2.0f; //sensitivity of mouse movement
-    
+    [SerializeField] private Vector3 respawnPoint = new Vector3(0f, 2f, 0f); //reference to respawn point
+
     private Rigidbody rb;
     private bool IsGrounded = true; //check grounded state (true initially)
     private bool IsJumping = false;
@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
     private bool isReadyForDoubleJump; //check if ready for double button press (Space)
     private float idleDelay = 1.0f; //time in seconds to wait before playing idle animation
     private float timer = 0.0f; //variable to store time elapsed
+    private float groundCheckCooldown = 1.0f; //cooldown time after landing
+    private float lastGroundedTime; //variable to track last time player was grounded
 
     void Start()
     {
@@ -123,10 +125,14 @@ public class Player : MonoBehaviour
             animator.SetBool("IsJumping", false);
             animator.SetBool("IsGliding", false);
             animator.SetBool("IsFalling", false);
+            lastGroundedTime = Time.time; //update last grounded time to prevent any animations retriggering
         }
-        else if (rb.velocity.y < 0 && !IsGliding && !IsGrounded) //check player is falling
+        else if (Time.time > lastGroundedTime + groundCheckCooldown) //if time greater than last grounded time + cooldown
         {
-            animator.SetBool("IsFalling", true);
+            if (rb.velocity.y < 0 && !IsGliding) //check player falling
+            {
+                animator.SetBool("IsFalling", true);
+            }
         }
     }
 
@@ -195,8 +201,11 @@ public class Player : MonoBehaviour
     private void RotateCharacter(Vector3 movement)
     {
         float mouseX = Input.GetAxis("Mouse X"); //capture mouse movement
-        transform.Rotate(0, mouseX * mouseSensitivity, 0); //rotate around y axis based on mouse movement
-        if (movement != Vector3.zero) //if movement is not 0 also rotate to face that direction
+        if (Mathf.Abs(mouseX) > 0.01f) //only apply mouse rotation if there is input
+        {
+            transform.Rotate(0, mouseX * mouseSensitivity, 0); //rotate around y axis based on mouse movement
+        }
+        else if (movement != Vector3.zero) //if movement is not 0 also rotate to face that direction
         {
             Quaternion targetRotation = Quaternion.LookRotation(movement);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);

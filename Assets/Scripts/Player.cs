@@ -230,11 +230,11 @@ public class Player : MonoBehaviour
         {
             transform.Rotate(0, mouseX * mouseSensitivity, 0); //rotate around y axis based on mouse movement
         }
-        //if (movement != Vector3.zero) //logic to rotate based on movement direction possibly add to options later 
-        //{
-        //    Quaternion targetRotation = Quaternion.LookRotation(movement);
-        //    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
-        //}
+        if (movement != Vector3.zero) //logic to rotate based on movement direction possibly add to options later 
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(movement);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+        }
     }
 
     private void OnCollisionEnter(Collision collision) //below will check player collision with the ground platforms

@@ -15,8 +15,8 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_FogColor: {r: 1, g: 0.8419017, b: 0.19339621, a: 1}
+  m_FogMode: 2
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.06634923, b: 0.06634923, a: 0.24705882}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4173,7 +4173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.06634923, b: 0.06634923, a: 0.24705882}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5459,6 +5459,9 @@ MonoBehaviour:
   wallRayLength: 0.5
   mouseSensitivity: 2
   respawnPoint: {x: 0, y: 2, z: 0}
+  stuckTimeThreshold: 5
+  fallingTag: Falling
+  respawnTime: 2
 --- !u!95 &1422662489
 Animator:
   serializedVersion: 5
@@ -5480,8 +5483,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &1422662490
-BoxCollider:
+--- !u!136 &1422662490
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5498,9 +5501,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.728279, y: 5.2481523, z: 6.3351836}
-  m_Center: {x: 0.00660038, y: 2.507067, z: -0.14596963}
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Height: 5.6595154
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5565028, z: -0.000000001139022}
 --- !u!4 &1430600992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6735088796914226722, guid: 0053f8ef070fe92489b719bb07c57678,
@@ -7402,7 +7407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.06634923, b: 0.06634923, a: 0.24705882}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

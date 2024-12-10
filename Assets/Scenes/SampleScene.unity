@@ -1412,6 +1412,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1699749288}
     m_Modifications:
+    - target: {fileID: 5980974927008256595, guid: 0053f8ef070fe92489b719bb07c57678,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 6213849554043358360, guid: 0053f8ef070fe92489b719bb07c57678,
         type: 3}
       propertyPath: m_Name
@@ -1625,6 +1630,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7391477547787271784, guid: 6b66d7953d762474a80e8cdc383e933b,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 7558354337164163609, guid: 6b66d7953d762474a80e8cdc383e933b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1822,6 +1832,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1699749288}
     m_Modifications:
+    - target: {fileID: 5980974927008256595, guid: 0053f8ef070fe92489b719bb07c57678,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 6213849554043358360, guid: 0053f8ef070fe92489b719bb07c57678,
         type: 3}
       propertyPath: m_Name
@@ -1940,6 +1955,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7668307313369866191, guid: 71cdb6d4ac69a494d9fc007276e6e765,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 8023157106856280324, guid: 71cdb6d4ac69a494d9fc007276e6e765,
         type: 3}
       propertyPath: m_Name
@@ -2404,7 +2424,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -150}
+  m_AnchoredPosition: {x: 250, y: -150}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478715475
@@ -2593,6 +2613,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1699749288}
     m_Modifications:
+    - target: {fileID: 5980974927008256595, guid: 0053f8ef070fe92489b719bb07c57678,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 6213849554043358360, guid: 0053f8ef070fe92489b719bb07c57678,
         type: 3}
       propertyPath: m_Name
@@ -2777,6 +2802,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowGem
       objectReference: {fileID: 0}
+    - target: {fileID: 5042688191440694932, guid: 2ecb3b97c36df5c4bb5cb70cc790862e,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 5443827905068034789, guid: 2ecb3b97c36df5c4bb5cb70cc790862e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2971,6 +3001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenGem
       objectReference: {fileID: 0}
+    - target: {fileID: 6862016114847153633, guid: b10463c634b15794ebd064ee1933a8e3,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3086,6 +3121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowGem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5042688191440694932, guid: 2ecb3b97c36df5c4bb5cb70cc790862e,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 5443827905068034789, guid: 2ecb3b97c36df5c4bb5cb70cc790862e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3154,6 +3194,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7391477547787271784, guid: 6b66d7953d762474a80e8cdc383e933b,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 7558354337164163609, guid: 6b66d7953d762474a80e8cdc383e933b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3311,6 +3356,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1699749288}
     m_Modifications:
+    - target: {fileID: 5980974927008256595, guid: 0053f8ef070fe92489b719bb07c57678,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 6213849554043358360, guid: 0053f8ef070fe92489b719bb07c57678,
         type: 3}
       propertyPath: m_Name
@@ -3390,6 +3440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGem
       objectReference: {fileID: 0}
+    - target: {fileID: 7391477547787271784, guid: 6b66d7953d762474a80e8cdc383e933b,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 7558354337164163609, guid: 6b66d7953d762474a80e8cdc383e933b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3680,6 +3735,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenGem
       objectReference: {fileID: 0}
+    - target: {fileID: 6862016114847153633, guid: b10463c634b15794ebd064ee1933a8e3,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3710,6 +3770,7 @@ GameObject:
   - component: {fileID: 826466678}
   - component: {fileID: 826466677}
   - component: {fileID: 826466681}
+  - component: {fileID: 826466682}
   m_Layer: 5
   m_Name: CollectibleUI
   m_TagString: Untagged
@@ -3814,9 +3875,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7ad9295a6f0be438a47282ba7896fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gemCounterText: {fileID: 1793686842}
+  gemValueText: {fileID: 1793686842}
   percentageText: {fileID: 478715475}
   progressBar: {fileID: 1040244591}
+  gemSound: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
+  audioSource: {fileID: 826466682}
+--- !u!82 &826466682
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826466676}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &834252891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5462,6 +5621,7 @@ MonoBehaviour:
   stuckTimeThreshold: 5
   fallingTag: Falling
   respawnTime: 2
+  flyingSound: {fileID: 8300000, guid: 4291c2436b3ffb74f8d3d8f13f3566c1, type: 3}
 --- !u!95 &1422662489
 Animator:
   serializedVersion: 5
@@ -5506,6 +5666,102 @@ CapsuleCollider:
   m_Height: 5.6595154
   m_Direction: 1
   m_Center: {x: 0, y: 2.5565028, z: -0.000000001139022}
+--- !u!82 &1422662491
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422662484}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4291c2436b3ffb74f8d3d8f13f3566c1, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1430600992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6735088796914226722, guid: 0053f8ef070fe92489b719bb07c57678,
@@ -5785,6 +6041,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenGem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6862016114847153633, guid: b10463c634b15794ebd064ee1933a8e3,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6269,6 +6530,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7668307313369866191, guid: 71cdb6d4ac69a494d9fc007276e6e765,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 8023157106856280324, guid: 71cdb6d4ac69a494d9fc007276e6e765,
         type: 3}
       propertyPath: m_Name
@@ -6383,7 +6649,7 @@ GameObject:
   - component: {fileID: 1793686843}
   - component: {fileID: 1793686842}
   m_Layer: 5
-  m_Name: GemCountText
+  m_Name: GemValueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6405,8 +6671,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -50}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchoredPosition: {x: 290, y: -50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793686842
 MonoBehaviour:
@@ -6428,7 +6694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gems: 0'
+  m_text: 'GemS Value: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -6629,6 +6895,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1422662490}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a8584f4afd609a4fbf0edd16bc6fc3a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1422662491}
   m_SourcePrefab: {fileID: 100100000, guid: 7a8584f4afd609a4fbf0edd16bc6fc3a, type: 3}
 --- !u!4 &1899852376 stripped
 Transform:
@@ -7019,6 +7289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenGem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6862016114847153633, guid: b10463c634b15794ebd064ee1933a8e3,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7683,6 +7958,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7668307313369866191, guid: 71cdb6d4ac69a494d9fc007276e6e765,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 8023157106856280324, guid: 71cdb6d4ac69a494d9fc007276e6e765,
         type: 3}
       propertyPath: m_Name
@@ -7706,6 +7986,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueGem
       objectReference: {fileID: 0}
+    - target: {fileID: 7391477547787271784, guid: 6b66d7953d762474a80e8cdc383e933b,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 7558354337164163609, guid: 6b66d7953d762474a80e8cdc383e933b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7824,6 +8109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenGem
       objectReference: {fileID: 0}
+    - target: {fileID: 6862016114847153633, guid: b10463c634b15794ebd064ee1933a8e3,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7837,6 +8127,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1699749288}
     m_Modifications:
+    - target: {fileID: 5980974927008256595, guid: 0053f8ef070fe92489b719bb07c57678,
+        type: 3}
+      propertyPath: gemSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ff46daa227ecdcd45973a5d4c8cdac2b, type: 3}
     - target: {fileID: 6213849554043358360, guid: 0053f8ef070fe92489b719bb07c57678,
         type: 3}
       propertyPath: m_Name

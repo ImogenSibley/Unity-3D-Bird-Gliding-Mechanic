@@ -7,12 +7,15 @@ using TMPro;
 public class CollectibleUI : MonoBehaviour
 {
     public static CollectibleUI Instance;
-    public TextMeshProUGUI gemCounterText;
+    public TextMeshProUGUI gemValueText;
     public TextMeshProUGUI percentageText;
     public Image progressBar;
     private int gemCount = 0;
     private int gemValue = 0;
     private int totalGems; //total number of gems
+
+    public AudioClip gemSound; //stores audio clip
+    public AudioSource audioSource; //stores audio source
 
     private void Awake()
     {
@@ -37,12 +40,20 @@ public class CollectibleUI : MonoBehaviour
     {
         gemValue += value; //adds gem value to score variable
         gemCount++; //adds gem count for percentage calculations
+        if (audioSource != null && gemSound != null)
+        {
+            audioSource.PlayOneShot(gemSound); //play gem sound if one exists
+        }
+        else
+        {
+            Debug.LogError("No AudioSource found on this GameObject."); //else print error log
+        }
         UpdateGemCountUI();
     }
 
     private void UpdateGemCountUI()
     {
-        gemCounterText.text = "Gems: " + gemValue; //text displayed on in game UI
+        gemValueText.text = "Gems Value: " + gemValue; //text displayed on in game UI
         float percentage = (float)gemCount / totalGems * 100; //calculate percentage of gems collected
         percentageText.text = $"{Mathf.RoundToInt(percentage)}%"; //update percentage UI text, rounded to the nearest integer
         progressBar.fillAmount = percentage / 100; //update progress bar

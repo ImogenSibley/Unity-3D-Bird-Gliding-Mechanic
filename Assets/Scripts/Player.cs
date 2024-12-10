@@ -37,11 +37,15 @@ public class Player : MonoBehaviour
     public string fallingTag = "Falling";
     public float respawnTime = 2f; //seconds to wait before respawn
 
+    public AudioClip flyingSound; //variable to store flying sound clip
+    private AudioSource audioSource; //variable to store audio source
+
     void Start()
     {
         rb = GetComponent<Rigidbody>(); //get rigidbody
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ; //freeze rotation on the x and z axes to prevent tipping over
         animator = GetComponent<Animator>(); //get animator
+        audioSource = GetComponent<AudioSource>(); //get audio source
     }
     
     void Update()
@@ -221,6 +225,15 @@ public class Player : MonoBehaviour
     {
         IsGliding = true; //set gliding state
         animator.SetBool("IsGliding", true); //set gliding animation
+        if (audioSource != null && flyingSound != null) //if sound variables not null
+        {
+            audioSource.clip = flyingSound; //assign flying sound to AudioSource
+            audioSource.Play();             //play sound
+        }
+        if (audioSource == null) //else print error log
+        {
+            Debug.LogError("No AudioSource found on this GameObject.");
+        }
     }
 
     private void RotateCharacter(Vector3 movement)

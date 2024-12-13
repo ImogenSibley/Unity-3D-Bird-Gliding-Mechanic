@@ -199,7 +199,9 @@ public class PauseMenuUI : MonoBehaviour
     {
         if (playerScript != null) //if player script is found
         {
+            Time.timeScale = 0f; //ensure game stays frozen while navigating UI
             playerScript.moveSpeed = value; //set move speed to input value
+            playerScript.enabled = false; //disable player movement mouse rotation
         }
     }
 
@@ -207,7 +209,9 @@ public class PauseMenuUI : MonoBehaviour
     {
         if (playerScript != null) //if player script is found
         {
+            Time.timeScale = 0f; //ensure game stays frozen while navigating UI
             playerScript.sprintModifier = value; //set to input value
+            playerScript.enabled = false; //disable player movement mouse rotation
         }
     }
 
@@ -215,7 +219,9 @@ public class PauseMenuUI : MonoBehaviour
     {
         if (playerScript != null) //if player script is found
         {
+            Time.timeScale = 0f; //ensure game stays frozen while navigating UI
             playerScript.jumpForce = value; //set to input value
+            playerScript.enabled = false; //disable player movement mouse rotation
         }
     }
 
@@ -223,7 +229,9 @@ public class PauseMenuUI : MonoBehaviour
     {
         if (playerScript != null) //if player script is found
         {
+            Time.timeScale = 0f; //ensure game stays frozen while navigating UI
             playerScript.diveForce = value; //set to input value
+            playerScript.enabled = false; //disable player movement mouse rotation
         }
     }
 }

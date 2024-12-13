@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PurpleGem
   m_EditorClassIdentifier: 
   gemName: PurpleGem
-  value: 25
+  value: 10

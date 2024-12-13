@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: YellowGem
   m_EditorClassIdentifier: 
   gemName: YellowGem
-  value: 10
+  value: 25
